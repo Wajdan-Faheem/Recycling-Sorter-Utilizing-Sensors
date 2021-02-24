@@ -61,18 +61,10 @@ def location_1():
     print("Container 1 is",material_1,"that weighs",weight_1,"and will be transported to",location_1)
 
 
-
-
 def disp_cont1():
-
-
-    if num1 == 0:
-    
+    if num1 == 0: 
         my_table.dispense_container()
-
-
     else:
-
         my_table.dispense_container()
 
 
@@ -154,8 +146,6 @@ def load_cont2():
     arm.move_arm(-0.0, -0.0359, 0.6658)
     
 
-
-##---------------------------------------------------------------------------------------
 def location_3():
 
 #def disp_cont3():
@@ -218,8 +208,6 @@ def load_cont3():
     arm.move_arm(0.0, -0.3447, 0.4772)
     arm.control_gripper(-45)
     arm.move_arm(-0.0, -0.0359, 0.6658)
-
-##---------------------------------------------------------------------------------------      
 
 def transfer_cont():
     bot.activate_ultrasonic_sensor()
@@ -286,10 +274,6 @@ def transfer_cont3():
            
 
            break
-
-
- ##--------------------------------------------------------------------------------------- 
-
 
 def dump_cont():
     
