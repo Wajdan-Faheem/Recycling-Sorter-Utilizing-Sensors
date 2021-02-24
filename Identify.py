@@ -35,10 +35,7 @@ def user():
     num2 =int(input("Dispense container 2: "))
     num3 =int(input("Dispense container 3: "))
 
-def random
 
-
-##---------------------------------------------------------------------------------------
 def location_1():
 #def disp_cont1():
     global location_1,weight_1,material_1,bottle_1
@@ -61,8 +58,7 @@ def location_1():
         location_1= x[2]
         weight_1 = x[1]
         material_1 = x[0]
-    print("Container 1 is",material_1,"that weighs",weight_1,
-          "and will be transported to",location_1)
+    print("Container 1 is",material_1,"that weighs",weight_1,"and will be transported to",location_1)
 
 
 
@@ -90,18 +86,11 @@ def load_cont1():
     arm.move_arm(0.5022, 0.0, 0.2461)
     arm.move_arm(0.3819, -0.0, 0.6216)
     arm.rotate_base(-90)
-  
     #time.sleep(1)
     arm.move_arm(0.0, -0.5264, 0.4257)
     arm.control_gripper(-45)
     arm.move_arm(-0.0, -0.0359, 0.6658)
 
-    
-
-
-
-
-##---------------------------------------------------------------------------------------
 
 def location_2():
 
@@ -157,7 +146,7 @@ def load_cont2():
     arm.move_arm(0.5022, 0.0, 0.2461)
     arm.move_arm(0.3819, -0.0, 0.6216)
     arm.rotate_base(-90)
-      
+
     time.sleep(1)
     #arm.move_arm(0.0, -0.4002, 0.412)
     arm.move_arm(0.0, -0.4374, 0.4812)
@@ -182,7 +171,7 @@ def location_3():
         location_3= x3[2]
         weight_3 = x3[1]
         material_3 = x3[0]
-     
+
 
     else:
         bottle_3 = num3
@@ -230,17 +219,7 @@ def load_cont3():
     arm.control_gripper(-45)
     arm.move_arm(-0.0, -0.0359, 0.6658)
 
-def disp_cont(cont):
-
-    
-        
-
-
-
-
-
 ##---------------------------------------------------------------------------------------      
-
 
 def transfer_cont():
     bot.activate_ultrasonic_sensor()
@@ -342,9 +321,6 @@ def home_position():
     arm.home()
     return
 
-
-
- ##--------------------------------------------------------------------------------------- 
 '''
 def location():
     user()
@@ -429,11 +405,6 @@ def main():
 
 main()
 
-
-
-##---------------------------------------------------------------------------------------
-## STUDENT CODE ENDS
-##---------------------------------------------------------------------------------------
 update_thread = repeating_timer(2,update_sim)
 
 '''      
